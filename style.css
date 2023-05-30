@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Roboto:ital,wght@0,100;0,300;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+header{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    z-index: 99999999999;
+    position: absolute;
+}
+.btn_prin{
+  padding: 20px 40px;
+  background-color: #000000;
+  border-radius: 7px;
+  font-size: 18px;
+  color: #ffffff;
+}
+.btn_outline{
+    padding: 20px 40px;
+    outline: none;
+    background-color: transparent;
+    border-radius: 7px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+.btn_outline:hover{
+    background-color: #ffffff;
+    color: #000000;
+    transition: all ease 0.4s;
+}
+.navbar{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 80px;
+    transform: rotate(-20deg);
+    transition: all ease 0.4s;
+}
+.logo:hover{
+    transform: rotate(0deg);
+    transition: all ease 0.4s;
+}
+.logo img{
+    width: 80px;
+}
+.navbar .lista{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.navbar .lista li a{
+    color: #ffffff;
+    font-size: 24px;
+}
+.navbar .menu_logo{
+    color: #ffffff;
+}
+.navbar .menu{
+    display: none;
+}
+.banner{
+    width: 100%;
+    min-height: 700px;
+    height: 80vh;
+    background: rgb(24,24,218);
+    background: linear-gradient(90deg, rgba(24,24,218,1) 34%, rgba(2,0,36,1) 72%);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    /* padding-top: 120px; */
+}
+.banner .banner_info{
+    width: 80%;
+    margin: 0 auto;
+}
+.banner .banner_info h3{
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.banner .banner_info h6{
+    font-size: 55px;
+    width: 100%;
+    max-width: 900px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: bolder;
+
+}
+
+.banner .banner_info a{
+  display: inline-block;
+  margin-top: 70px;
+  color: #ffffff;
+}
+.about-me .info-cine{
+    width: 80%;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+.about-me .info-cine .info{
+    text-align: center;
+    background-color: #f8fafc;
+    padding: 30px;
+    border-radius: 15px;
+}
+.about-me .info-cine .info:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.4s;
+}
+.about-me .info-cine .info img{
+    width: 45px;
+}
+.about-me .info-cine .info p{
+    margin-top: 20px;
+}
+.about-me .info-video{
+    width: 80%;
+    margin: 80px auto;
+    text-align: center;
+}
+.about-me .info-video p{
+    font-size: 20px;
+    margin-bottom: 80px;
+    color: #64748B;
+}
+
+.about-me .info-video h2{
+    font-size: 35px;
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom: 30px;
+}
+
+.about-me .info-video iframe{
+    width: 70%;
+    min-height: 500px;
+    height: auto;
+}
+
+.section-cartelera{
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #f8fafc;
+}
+.section-cartelera h4{
+    font-size: 35px;
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.section-cartelera .peliculas{
+    width: 80%;
+    margin: 0 auto;
+}
+.section-cartelera .peliculas .pelicula{
+    padding: 30px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+   
+}
+.section-cartelera .peliculas .pelicula .portada{
+    position: relative;
+}
+.section-cartelera .peliculas .pelicula .portada button{
+    cursor: pointer;
+}
+
+.section-cartelera .peliculas .pelicula .portada img{
+    width: 100%;
+    height: 100%;
+}
+.section-cartelera .peliculas .pelicula .portada .name_movie{
+    position: absolute;
+    top : 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+.section-cartelera .peliculas .pelicula .portada .name_movie:hover{
+    opacity: 1;
+    transition: all ease 0.4s;
+}
+
+.section-cartelera .peliculas .pelicula .portada .name_movie:hover .portada{
+    zoom: 10%;
+    border: solid 2px red;
+}
+.section-cartelera .peliculas .pelicula .portada .name_movie h3{
+    color: #ffffff;
+    font-size: 34px;
+    text-align: center;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.formulario-mensaje{
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.formulario-mensaje h4{
+    font-size: 45px;
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom: 100px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.formulario-mensaje form{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+    gap: 20px;
+}
+.formulario-mensaje input{
+    outline: none;
+    padding: 20px;
+}
+
+.formulario-mensaje textarea{
+    resize: none;
+}
+
+.formulario-mensaje .btn{
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    max-width: 180px;
+    border: none;
+    margin-top: 30px;
+}
+
+
+footer{
+    text-align: center;
+    padding: 30px;
+}
+footer p a{
+    color: #64748B;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    gap: 10px;
+}
+footer img{
+    width: 30px;
+}
+
+/* Detalles */
+
+.banner-detalle{
+    width: 100%;
+    min-height: 500px;
+    background-color: rgba(50, 50, 50, 0.9);
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.banner-detalle .btn_play{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.banner-detalle .btn_play img{
+    width: 100px;
+    cursor: pointer;
+} 
+
+.banner-detalle .btn_play img:hover{
+    width: 110px;
+    transition: all ease 0.4s;
+} 
+
+.main-detalles .contenedor{
+    width: 80%;
+    margin: 0 auto;
+    transform: translateY(-150px);
+    display: flex;
+    gap: 30px;
+}
+
+.main-detalles .contenedor .formulario h4{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: bolder;
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.main-detalles .contenedor .formulario .minutos{
+    padding: 5px;
+    border: solid 2px #ffffff;
+    color: #ffffff;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-bottom: 50px;
+}
+.main-detalles .contenedor .formulario .synopsis{
+    font-size: 24px;
+    text-align: justify;
+    margin-bottom: 27px;
+}
+.main-detalles .contenedor .formulario span{
+    font-weight: bold;
+}
+.main-detalles .contenedor .formulario .datos{
+    margin-bottom: 15px;
+}
+.main-detalles .contenedor .formulario .titulo-Reserva{
+    font-size: 35px;
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+.main-detalles form{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    gap: 20px;
+}
+.main-detalles input{
+    outline: none;
+    padding: 20px;
+}
+.main-detalles select{
+    padding: 20px;
+}
+
+.main-detalles .btn{
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    max-width: 180px;
+    border: none;
+    margin-top: 30px;
+}
+
+/* RESPONSIVE*/
+@media only screen and (max-width: 1100px) {
+    .banner{
+        min-height: 500px;
+    }
+    .banner .banner_info h6{
+        font-size: 37px;
+    }
+    .about-me .info-cine{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+
+@media only screen and (max-width: 700px) {
+
+    .about-me .info-cine{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .section-cartelera .peliculas .pelicula{
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+
+    .main-detalles .contenedor{
+        flex-direction: column;
+    }
+    .main-detalles .contenedor .formulario h4{
+        color: #000000;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .main-detalles .contenedor .imangen_compra{
+        text-align: center;
+    }
+    .navbar{
+        position: relative;
+    }
+    .navbar .lista{
+        position: absolute;
+        flex-direction: column;
+        top: -356px;
+        left: 0;
+        width: 100%;
+        background-color: #000000;
+        padding: 100px 20px;
+        text-align: center;
+        border-radius: 15px;
+        transition: all ease 0.4s;
+    }
+    .navbar .menu{
+        display: inherit;
+    }
+
+    #lista.abrirMenu{
+        top: 120px;
+        transition: all ease 0.4s;
+    }
+    .banner{
+        min-height: 300px;
+    }
+  }
+
+
+

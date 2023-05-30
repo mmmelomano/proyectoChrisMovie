@@ -4,80 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
     <title>Chris Movie!</title>
 </head>
 <body>
-    <header class="header">
-
+    <header class="header" id="header">
         <nav class="navbar">
             <div class="logo">
-                <img src="images/logo.png" alt="Logo">
+                <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
             </div>
-            <ul class="lista">
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Cartelera</a></li>
-                <li><a href="#">Contactanos</a></li>
+            <ul class="lista" id="lista">
+                <li><a href="#about-me">Sobre Nosotros</a></li>
+                <li><a href="#section-cartelera">Cartelera</a></li>
+                <li><a href="#form-contac">Contactanos</a></li>
             </ul>
+            <div class="menu">
+                <a class="menu_logo" href="#">MENU</a>
+            </div>
         </nav>
     </header>
     <main class="main">
         <div class="banner">
-            <p>
-                El cine casero es una experiencia de entretenimiento en el hogar que ofrece una forma personalizada y cómoda de disfrutar de películas y programas de televisión. Con equipos de alta calidad, como proyectores de video, pantallas de proyección y sistemas de sonido envolvente, el cine casero brinda una experiencia visual y auditiva inmersiva. Ya no es necesario salir de casa para disfrutar de una película en una gran pantalla con calidad de imagen y sonido de alta fidelidad. Además, con la disponibilidad de reproductores de medios digitales y servicios de transmisión en línea, es posible acceder a una amplia variedad de contenido en cualquier momento. El cine casero es perfecto para reuniones familiares, noches de cine con amigos o simplemente para relajarse y disfrutar de tus películas favoritas en la comodidad de tu hogar.
-
-            </p>
-            <img src="imagenes/cinecasero.jpg" alt="cinema">
+            <div class="banner_info">
+                <h3>Vive la experiencia Chris Movie!</h3>
+                <h6>Disfruta de las últimas películas, clásicos atemporales y emocionantes estrenos, todo a solo un botón de distancia.</h6>
+                <a class="btn_prin" href="#section-cartelera">Ver Peliculas</a>
+            </div>
         </div>
-        <div ><h4>La Cartelera</h4></div>
-        <div class="peliculas">
-            <div>
-                <div>
-                    <img src="" alt="portada">
+        <div class="about-me" id="about-me">
+            <div class="info-cine">
+                <div class="info">
+                    <img src="images/4k-fullhd.png" alt="">
+                    <p>Nuestras películas en 4K Ultra HD y Dolby Vision te transportarán a un nuevo nivel de inmersión, permitiéndote vivir cada momento con una fidelidad visual sorprendente. </p>
                 </div>
-                <div class="sinopsis">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor natus, pariatur quia obcaecati quo tempora deserunt earum culpa quis laudantium magnam modi facilis, dolorum adipisci, eius laboriosam accusamus corporis id?
-                    </p>
-                    <button class="btn">Reservar</button>
+                <div class="info">
+                    <img src="images/barcode-outline.svg" alt="">
+                    <p>Prepárate para sumergirte en un mundo de sonido envolvente que te transportará directamente al corazón de la acción en la pantalla grande.</p>
                 </div>
-
-                
+                <div class="info">
+                    <img src="images/ice-cream-outline.svg" alt="">
+                    <p>el lugar perfecto para deleitar tus sentidos antes, durante y después de disfrutar una película. Nuestra variada selección de delicias, diseñados para complementar tu experiencia cinematográfica.</p>
+                </div>
+                <div class="info">
+                    <img src="images/chatbubbles-outline.svg" alt="">
+                    <p>Siempre estamos en contacto para lo que necesites en nuestro cine. Nos enorgullece brindarte un servicio excepcional y estar disponibles para responder a tus preguntas, atender tus solicitudes y asegurarnos de que tu visita sea extraordinaria.</p>
+                </div>
             </div>
-            <div>
-                <div>
-                    <img src="" alt="portada">
-                </div>
-                <div class="sinopsis">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor natus, pariatur quia obcaecati quo tempora deserunt earum culpa quis laudantium magnam modi facilis, dolorum adipisci, eius laboriosam accusamus corporis id?
-                    </p>
-                    <button class="btn">Reservar</button>
-                </div>
-
-                
+            <div class="info-video">
+                <h2>SOBRE NOSOTROS</h2>
+                <p> El cine casero es una experiencia de entretenimiento en el hogar que ofrece una forma personalizada y cómoda de disfrutar de películas y programas de televisión. Con equipos de alta calidad, como proyectores de video, pantallas de proyección y sistemas de sonido envolvente, el cine casero brinda una experiencia visual y auditiva inmersiva. Ya no es necesario salir de casa para disfrutar de una película en una gran pantalla con calidad de imagen y sonido de alta fidelidad. Además, con la disponibilidad de reproductores de medios digitales y servicios de transmisión en línea, es posible acceder a una amplia variedad de contenido en cualquier momento. El cine casero es perfecto para reuniones familiares, noches de cine con amigos o simplemente para relajarse y disfrutar de tus películas favoritas como en la comodidad de tu hogar.</p>
+                <iframe src="https://www.youtube.com/embed/pOLqApUiEDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <div>
-                <div>
-                    <img src="" alt="portada">
-                </div>
-                <div class="sinopsis">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor natus, pariatur quia obcaecati quo tempora deserunt earum culpa quis laudantium magnam modi facilis, dolorum adipisci, eius laboriosam accusamus corporis id?
-                    </p>
-                    <button class="btn">Reservar</button>
-                </div>
-
-                
+        </div>
+        <div class="section-cartelera" id="section-cartelera" >
+            <h4>CARTELERA SEMANAL</h4>
+            <div class="peliculas">
+                <div class="pelicula" id="contenedor_pelicula"></div>
             </div>
-
+        </div>
+        <div class="formulario-mensaje" id="form-contac">
+            <h4>Cuentanos algo</h4>
+            <form action="">
+                <input type="text" id="nombresMen" placeholder="nombre completo" required>
+                <input type="mail" id ="emailMen" placeholder="correo electronico" required>
+                <textarea name=""  id="textoMen" cols="30" rows="10"></textarea>
+                <button class="btn btn_prin" id="btnEnviarMensaje">Enviar</button>
+            </form>
         </div>
     </main>
     <footer class="footer">
-        <p>
-            <a href="">Chris Tv</a>
-        </p>
+        <p><a href="#header">Chris Movie!</a></p>
+        <ul>
+            <li><a target="_blank" href="https://www.facebook.com/christian.rojas.12177"><img src="images/logo-facebook.svg" alt=""></a></li>
+            <li><a target="_blank" href="https://instagram.com/kristianroxaskiroz"><img src="images/logo-instagram.svg" alt=""></a></li>
+        </ul>
     </footer>
-    
+    <script src="app.js"></script>
 </body>
 </html>

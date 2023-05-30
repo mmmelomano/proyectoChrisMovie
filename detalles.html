@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
     <title>Chris Movie!</title>
 </head>
 <body>
     <header class="header">
-
         <nav class="navbar">
             <div class="logo">
-                <img src="images/detalles.html" alt="Logo">
+                <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
             </div>
-            <ul class="lista">
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Cartelera</a></li>
-                <li><a href="index.html">Contactanos</a></li>
+            <ul class="lista" id="lista">
+                <li><a href="#about-me">Sobre Nosotros</a></li>
+                <li><a href="#section-cartelera">Cartelera</a></li>
+                <li><a href="#contact">Contactanos</a></li>
             </ul>
+            <div class="menu">
+                <a class="menu_logo" href="#">MENU</a>
+            </div>
         </nav>
     </header>
+    <div id ="banner-detalle" class="banner-detalle">
+        <div class="btn_play">
+            <a target="_blank" id="btnVideo"><img src="images/play-circle-outline.svg" alt=""></a>
+        </div>
+    </div>
     <main class="main-detalles">
-        <div class="contenedor">
-            <div class="imangen_compra">
-                <img src="" alt="portada">
-            </div>
-            <div class="formulario">
+        <div class="contenedor" id="contenedor">
                 <form action="">
                     <input type="text" placeholder="nombre completo">
                     <input type="mail" placeholder="correo electronico">
@@ -37,17 +40,11 @@
                         <option value="opcion3">8 pm</option>
                         <option value="opcion4">11pm</option>
                     </select>    
+                    <button class="btn btn_prin">Enviar</button>
                 </form>
-                <button class="btn">Comprar</button>
             </div>
         </div>
     </main>
-    
-    <footer class="footer">
-        <p>
-            <a href="">Chris Tv</a>
-        </p>
-    </footer>
-    
+    <script src="app.js"></script>
 </body>
 </html>
